@@ -37,9 +37,9 @@ if ($id !== null && $id !== false) {
 <?php foreach ($bikes as $bike): ?>
 <tr>
     <td>
-        <?=$bike['type']?>
-    </td>
+        <?=$bike['type']?>    </td>
     <td><a href="update.php?id=<?= $bike['id'] ?>"> update</a></td>
+    <td><a href="delete.php?id=<?= $bike['id'] ?>">delete</a></td>
 </tr>
 <?php endforeach;?>
 </table>
